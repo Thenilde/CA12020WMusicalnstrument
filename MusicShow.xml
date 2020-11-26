@@ -1,0 +1,129 @@
+<?xml version ="1.0" encoding ="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="MusicShow.xsl"?>
+
+<MusicalInstrument >
+	<section name="Brass">
+		<instrument sale="true">
+			<item> Cornet </item>
+			<price> 113 £ </price>
+		</instrument>
+		
+		<instrument>
+			<item>French horn</item>
+			<price>369 £</price>
+        </instrument>
+		
+		<instrument>
+			<item>Trombone</item>
+			<price>799 £</price>
+		</instrument>
+	
+		<instrument>
+			<item>Trumpet</item>
+			<price>435 £</price>
+		</instrument>
+
+		<instrument>
+			<item>Tuba</item>
+			<price>275 £</price>
+		</instrument>
+	</section>
+	
+	<section name="Keyboards">
+		<instrument>
+			<item>Harpsichord</item>
+			<price>940 £ </price>
+		</instrument>
+		
+		<instrument>
+			<item>Organ</item>
+			<price>430 £ </price>
+		</instrument>
+		
+		<instrument sale="true">
+			<item>Piono</item>
+			<price>850 £ </price>
+		</instrument>
+	</section>
+	
+	<section name="Percussion">
+		<instrument>
+			<item>Triangle</item>
+			<price>110 £ </price>
+		</instrument>
+		
+		<instrument>
+			<item>Cymbals</item>
+			<price>87 £ </price>
+		</instrument>
+	
+		<instrument sale="true">
+			<item>Gongo</item>
+			<price>450 £ </price>
+		</instrument>
+	
+		<instrument>
+			<item>Drums</item>
+			<price>1.100 £ </price>
+		</instrument>
+	
+		<instrument>
+			<item>Timpani</item>
+			<price>540 £ </price>
+		</instrument>
+	
+		<instrument>
+			<item>Xylophone</item>
+			<price>650 £ </price>
+		</instrument>
+	
+		<instrument>
+			<item>Tubular</item>
+			<price>2500 £ </price>
+		</instrument>
+	</section>
+	
+	<section name="Strings">
+		<instrument >
+			<item> Electric guitar </item>
+			<price> 2800 £ </price>
+		</instrument>
+	
+		<instrument >
+			<item> Cello  </item>
+			<price> 3600 £ </price>
+		</instrument>
+	
+		<instrument sale="true">
+			<item> Harp </item>
+			<price> 1000 £ </price>
+		</instrument>
+	
+		<instrument >
+			<item>  guitar </item>
+			<price> 840 £ </price>
+		</instrument>
+	</section> 
+	
+	<section name="Woodwind">
+		<instrument >
+			<item> Clarinet </item>
+			<price> 560 £ </price>
+		</instrument>
+		<instrument sale="true">
+			<item> Saxophone </item>
+			<price> 367 £ </price>
+		</instrument>
+		
+		<instrument >
+			<item> Oboe </item>
+			<price> 240 £ </price>
+		</instrument>
+	
+		<instrument >
+			<item> Basson </item>
+			<price> 920 £ </price>
+		</instrument>
+	</section>
+</MusicalInstrument>
+	
