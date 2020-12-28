@@ -92,7 +92,7 @@ router.post('/post/delete', function (req, res) {
 
             console.log(JSON.stringify(result, null, "  "));
 
-            jsToXmlFile('MusicSHow.xml', result, function(err){
+            jsToXmlFile('MusicShow.xml', result, function(err){
                 if (err) console.log(err);
             });
         });
