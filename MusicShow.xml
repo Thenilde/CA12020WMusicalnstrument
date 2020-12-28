@@ -1,7 +1,7 @@
-<?xml version ="1.0" encoding ="UTF-8" standalone="no"?>
-<?xml-stylesheet type="text/xsl" href="MusicShow.xsl"?>
+<?xml version ="1.0" encoding ="UTF-8" standalone="yes"?>
 
-<MusicalInstrument >
+
+<musicalinstrument >
 	<section name="Brass">
 		<instrument sale="true">
 			<item> Cornet </item>
@@ -125,5 +125,5 @@
 			<price> 920 £ </price>
 		</instrument>
 	</section>
-</MusicalInstrument>
+</musicalinstrument>
 	

@@ -62,7 +62,7 @@ router.post('/post/json', function (req, res) {
         xmlFileToJs('MusicShow.xml', function (err, result) {
             if (err) throw (err);
             
-            result.instrumentmenu.section[obj.sec_n].instrument.push({'item': obj.item, 'price': obj.price});
+            result.musicalinstrument.section[obj.sec_n].instrument.push({'item': obj.item, 'price': obj.price});
 
             console.log(JSON.stringify(result, null, "  "));
 
@@ -87,7 +87,7 @@ router.post('/post/delete', function (req, res) {
         xmlFileToJs('MusicShow.xml', function (err, result) {
             if (err) throw (err);
             
-            delete result.instrumentemenu.section[obj.section].instrument[obj.instrument];
+            delete result.musicalinstrument.section[obj.section].instrument[obj.instrument];
 
             console.log(JSON.stringify(result, null, "  "));
 
