@@ -5,8 +5,7 @@ var http = require('http'), //This module provides the HTTP server functionaliti
     xmlParse = require('xslt-processor').xmlParse, //This module allows us to work with XML files
     xsltProcess = require('xslt-processor').xsltProcess, //The same module allows us to utilise XSL Transformations
     xml2js = require('xml2js'); //This module does XML to JSON conversion and also allows us to get from JSON back to XML
-    var xml2js = require('xml2js');
-    
+
 var router = express(); //We set our routing to be handled by Express
 var server = http.createServer(router); //This is where our server gets created
 
@@ -42,8 +41,8 @@ router.get('/get/html', function(req, res) {
 
     res.writeHead(200, {'Content-Type': 'text/html'}); //We are responding to the client that the content served back is HTML and the it exists (code 200)
 
-    var xml = fs.readFileSync('MusicShow.xml', 'utf8'); //We are reading in the XML file
-    var xsl = fs.readFileSync('MusicShow.xsl', 'utf8'); //We are reading in the XSL file
+    var xml = fs.readFileSync('PaddysCafe.xml', 'utf8'); //We are reading in the XML file
+    var xsl = fs.readFileSync('PaddysCafe.xsl', 'utf8'); //We are reading in the XSL file
 
     var doc = xmlParse(xml); //Parsing our XML file
     var stylesheet = xmlParse(xsl); //Parsing our XSL file
@@ -60,14 +59,14 @@ router.post('/post/json', function (req, res) {
 
         console.log(obj)
 
-        xmlFileToJs('MusicShow.xml', function (err, result) {
+        xmlFileToJs('PaddysCafe.xml', function (err, result) {
             if (err) throw (err);
             
-            result.musicalinstrument.section[obj.sec_n].instrument.push({'item': obj.item, 'price': obj.price});
+            result.cafemenu.section[obj.sec_n].entree.push({'item': obj.item, 'price': obj.price});
 
             console.log(JSON.stringify(result, null, "  "));
 
-            jsToXmlFile('MusicShow.xml', result, function(err){
+            jsToXmlFile('PaddysCafe.xml', result, function(err){
                 if (err) console.log(err);
             });
         });
@@ -85,14 +84,14 @@ router.post('/post/delete', function (req, res) {
 
         console.log(obj)
 
-        xmlFileToJs('MusicShow.xml', function (err, result) {
+        xmlFileToJs('PaddysCafe.xml', function (err, result) {
             if (err) throw (err);
             
-            delete result.musicalinstrument.section[obj.section].instrument[obj.instrument];
+            delete result.cafemenu.section[obj.section].entree[obj.entree];
 
             console.log(JSON.stringify(result, null, "  "));
 
-            jsToXmlFile('MusicShow.xml', result, function(err){
+            jsToXmlFile('PaddysCafe.xml', result, function(err){
                 if (err) console.log(err);
             });
         });
